@@ -20,6 +20,17 @@ public class ArraysMethods {
         // поэтому при изменении массива, меняется и список
         humans[1].screamName();
         System.out.println(humanList);
+
+        int[] arr = {1, 4, 8, 5, 9, 12, 7, 24, -4, -8, 7, 45, -8, 14, 89, -75};
+
+        // Сортировка
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr)); // [-75, -8, -8, -4, 1, 4, 5, 7, 7, 8, 9, 12, 14, 24, 45, 89]
+
+        // Бинарный поиск
+        System.out.println(Arrays.binarySearch(arr, -4)); // 3
+
+        //
     }
 }
 
